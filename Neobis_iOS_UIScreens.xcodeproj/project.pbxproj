@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		0471CEBD2A87BF0F00CD1EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CEBC2A87BF0F00CD1EEA /* AppDelegate.swift */; };
 		0471CEBF2A87BF0F00CD1EEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CEBE2A87BF0F00CD1EEA /* SceneDelegate.swift */; };
-		0471CEC12A87BF0F00CD1EEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CEC02A87BF0F00CD1EEA /* ViewController.swift */; };
+		0471CEC12A87BF0F00CD1EEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CEC02A87BF0F00CD1EEA /* MainViewController.swift */; };
 		0471CEC42A87BF0F00CD1EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0471CEC22A87BF0F00CD1EEA /* Main.storyboard */; };
 		0471CEC62A87BF1000CD1EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0471CEC52A87BF1000CD1EEA /* Assets.xcassets */; };
 		0471CEC92A87BF1000CD1EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0471CEC72A87BF1000CD1EEA /* LaunchScreen.storyboard */; };
+		0471CED22A87BF8B00CD1EEA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CED12A87BF8B00CD1EEA /* WeatherViewController.swift */; };
+		0471CED42A87C06700CD1EEA /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CED32A87C06700CD1EEA /* WeatherModel.swift */; };
+		0471CED72A87C83400CD1EEA /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CED62A87C83400CD1EEA /* CryptoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0471CEB92A87BF0F00CD1EEA /* Neobis_iOS_UIScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_UIScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0471CEBC2A87BF0F00CD1EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0471CEBE2A87BF0F00CD1EEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0471CEC02A87BF0F00CD1EEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0471CEC02A87BF0F00CD1EEA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0471CEC32A87BF0F00CD1EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0471CEC52A87BF1000CD1EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0471CEC82A87BF1000CD1EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0471CECA2A87BF1000CD1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0471CED12A87BF8B00CD1EEA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		0471CED32A87C06700CD1EEA /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		0471CED62A87C83400CD1EEA /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		0471CEBB2A87BF0F00CD1EEA /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				0471CED52A87C81700CD1EEA /* CryptoPage */,
+				0471CED02A87BF4500CD1EEA /* WeatherPage */,
 				0471CEBC2A87BF0F00CD1EEA /* AppDelegate.swift */,
 				0471CEBE2A87BF0F00CD1EEA /* SceneDelegate.swift */,
-				0471CEC02A87BF0F00CD1EEA /* ViewController.swift */,
+				0471CEC02A87BF0F00CD1EEA /* MainViewController.swift */,
 				0471CEC22A87BF0F00CD1EEA /* Main.storyboard */,
 				0471CEC52A87BF1000CD1EEA /* Assets.xcassets */,
 				0471CEC72A87BF1000CD1EEA /* LaunchScreen.storyboard */,
 				0471CECA2A87BF1000CD1EEA /* Info.plist */,
 			);
 			path = Neobis_iOS_UIScreens;
+			sourceTree = "<group>";
+		};
+		0471CED02A87BF4500CD1EEA /* WeatherPage */ = {
+			isa = PBXGroup;
+			children = (
+				0471CED12A87BF8B00CD1EEA /* WeatherViewController.swift */,
+				0471CED32A87C06700CD1EEA /* WeatherModel.swift */,
+			);
+			path = WeatherPage;
+			sourceTree = "<group>";
+		};
+		0471CED52A87C81700CD1EEA /* CryptoPage */ = {
+			isa = PBXGroup;
+			children = (
+				0471CED62A87C83400CD1EEA /* CryptoViewController.swift */,
+			);
+			path = CryptoPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0471CEC12A87BF0F00CD1EEA /* ViewController.swift in Sources */,
+				0471CEC12A87BF0F00CD1EEA /* MainViewController.swift in Sources */,
+				0471CED22A87BF8B00CD1EEA /* WeatherViewController.swift in Sources */,
 				0471CEBD2A87BF0F00CD1EEA /* AppDelegate.swift in Sources */,
 				0471CEBF2A87BF0F00CD1EEA /* SceneDelegate.swift in Sources */,
+				0471CED42A87C06700CD1EEA /* WeatherModel.swift in Sources */,
+				0471CED72A87C83400CD1EEA /* CryptoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
