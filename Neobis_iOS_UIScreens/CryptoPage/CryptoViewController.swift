@@ -65,7 +65,7 @@ class CryptoViewController : UITabBarController {
         
         tableView.rowHeight = 90
         tableView.dataSource = self
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CryptoTableViewCell.self, forCellReuseIdentifier: "cell")
         
         tabBar.frame.size.height = 75
         
@@ -121,7 +121,7 @@ extension CryptoViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CryptoTableViewCell
         let crypto = cryptos[indexPath.row]
         
         switch indexPath.row {

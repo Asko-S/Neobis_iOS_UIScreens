@@ -5,7 +5,7 @@
 import Foundation
 import UIKit
 
-class MainTabBar: UITabBarController {
+class CryptoMainTabBar: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class MainTabBar: UITabBarController {
         let vc1 = createViewController(vc: UIViewController(), itemName: "", itemImage: "Main2")
         vc1.view.backgroundColor = .white
         
-        let vc2 = createViewController(vc: UIViewController(), itemName: "", itemImage: "profile")
+        let vc2 = createViewController(vc: UIViewController(), itemName: "", itemImage: "profileCrypto")
         vc2.view.backgroundColor = .white
         
         viewControllers = [vc, vc1, vc2]

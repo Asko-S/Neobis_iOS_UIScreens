@@ -16,8 +16,11 @@
 		0471CED22A87BF8B00CD1EEA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CED12A87BF8B00CD1EEA /* WeatherViewController.swift */; };
 		0471CED72A87C83400CD1EEA /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CED62A87C83400CD1EEA /* CryptoViewController.swift */; };
 		04E6F9DE2A90F5D2003440BF /* WeekWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9DD2A90F5D2003440BF /* WeekWeatherViewController.swift */; };
-		04E6F9E02A9103CB003440BF /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9DF2A9103CB003440BF /* MainTabBar.swift */; };
-		04E6F9E22A910473003440BF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9E12A910473003440BF /* TableViewCell.swift */; };
+		04E6F9E02A9103CB003440BF /* CryptoMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9DF2A9103CB003440BF /* CryptoMainTabBar.swift */; };
+		04E6F9E22A910473003440BF /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9E12A910473003440BF /* CryptoTableViewCell.swift */; };
+		04E6F9E52A910B0E003440BF /* FinanceMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9E42A910B0E003440BF /* FinanceMainTabBar.swift */; };
+		04E6F9E72A910B4F003440BF /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9E62A910B4F003440BF /* FinanceViewController.swift */; };
+		04E6F9E92A910B68003440BF /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9E82A910B68003440BF /* FinanceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +35,11 @@
 		0471CED12A87BF8B00CD1EEA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0471CED62A87C83400CD1EEA /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		04E6F9DD2A90F5D2003440BF /* WeekWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekWeatherViewController.swift; sourceTree = "<group>"; };
-		04E6F9DF2A9103CB003440BF /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
-		04E6F9E12A910473003440BF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		04E6F9DF2A9103CB003440BF /* CryptoMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMainTabBar.swift; sourceTree = "<group>"; };
+		04E6F9E12A910473003440BF /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		04E6F9E42A910B0E003440BF /* FinanceMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceMainTabBar.swift; sourceTree = "<group>"; };
+		04E6F9E62A910B4F003440BF /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
+		04E6F9E82A910B68003440BF /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		0471CEBB2A87BF0F00CD1EEA /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				04E6F9E32A910AF1003440BF /* FinancePage */,
 				0471CED52A87C81700CD1EEA /* CryptoPage */,
 				0471CED02A87BF4500CD1EEA /* WeatherPage */,
 				0471CEBC2A87BF0F00CD1EEA /* AppDelegate.swift */,
@@ -92,10 +99,20 @@
 			isa = PBXGroup;
 			children = (
 				0471CED62A87C83400CD1EEA /* CryptoViewController.swift */,
-				04E6F9DF2A9103CB003440BF /* MainTabBar.swift */,
-				04E6F9E12A910473003440BF /* TableViewCell.swift */,
+				04E6F9DF2A9103CB003440BF /* CryptoMainTabBar.swift */,
+				04E6F9E12A910473003440BF /* CryptoTableViewCell.swift */,
 			);
 			path = CryptoPage;
+			sourceTree = "<group>";
+		};
+		04E6F9E32A910AF1003440BF /* FinancePage */ = {
+			isa = PBXGroup;
+			children = (
+				04E6F9E42A910B0E003440BF /* FinanceMainTabBar.swift */,
+				04E6F9E62A910B4F003440BF /* FinanceViewController.swift */,
+				04E6F9E82A910B68003440BF /* FinanceTableViewCell.swift */,
+			);
+			path = FinancePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,13 +187,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0471CEC12A87BF0F00CD1EEA /* MainViewController.swift in Sources */,
-				04E6F9E22A910473003440BF /* TableViewCell.swift in Sources */,
+				04E6F9E22A910473003440BF /* CryptoTableViewCell.swift in Sources */,
 				0471CED22A87BF8B00CD1EEA /* WeatherViewController.swift in Sources */,
-				04E6F9E02A9103CB003440BF /* MainTabBar.swift in Sources */,
+				04E6F9E02A9103CB003440BF /* CryptoMainTabBar.swift in Sources */,
 				04E6F9DE2A90F5D2003440BF /* WeekWeatherViewController.swift in Sources */,
 				0471CEBD2A87BF0F00CD1EEA /* AppDelegate.swift in Sources */,
+				04E6F9E92A910B68003440BF /* FinanceTableViewCell.swift in Sources */,
+				04E6F9E52A910B0E003440BF /* FinanceMainTabBar.swift in Sources */,
 				0471CEBF2A87BF0F00CD1EEA /* SceneDelegate.swift in Sources */,
 				0471CED72A87C83400CD1EEA /* CryptoViewController.swift in Sources */,
+				04E6F9E72A910B4F003440BF /* FinanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

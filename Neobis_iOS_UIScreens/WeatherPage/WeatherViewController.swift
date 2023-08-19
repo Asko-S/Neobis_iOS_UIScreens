@@ -95,7 +95,7 @@ class WeatherViewController: UIViewController {
     
     let dateLabel: UILabel = {
         let cLabel = UILabel()
-        cLabel.text = "Сегодня, 19 Апрель"
+        cLabel.text = "Сегодня, 19 Август"
         cLabel.font = .systemFont(ofSize: 16)
         cLabel.textColor = .white
         cLabel.layer.shadowColor = UIColor.black.cgColor

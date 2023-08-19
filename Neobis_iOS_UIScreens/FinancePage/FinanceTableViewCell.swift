@@ -1,10 +1,10 @@
-//  TableViewCell.swift
+//  FinanceTableViewCell.swift
 //  Neobis_iOS_UIScreens
 //  Created by Askar Soronbekov
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class FinanceTableViewCell: UITableViewCell {
     
     var color = UIColor()
     
@@ -17,22 +17,14 @@ class TableViewCell: UITableViewCell {
     
     let view : UIView = {
         let view = UIView()
-        view.layer.cornerRadius = 25
+        view.layer.cornerRadius = 20
         
         return view
     }()
     
     let nameLabel : UILabel = {
         let cLabel = UILabel()
-        cLabel.font = .boldSystemFont(ofSize: 22)
-        
-        return cLabel
-    }()
-    
-    let percentLabel : UILabel = {
-        let cLabel = UILabel()
-        cLabel.textColor = .gray
-        cLabel.font = .systemFont(ofSize: 12)
+        cLabel.font = .systemFont(ofSize: 22)
         
         return cLabel
     }()
@@ -47,7 +39,7 @@ class TableViewCell: UITableViewCell {
     let cryptoPriceLabel : UILabel = {
         let cLabel = UILabel()
         cLabel.textColor = .gray
-        cLabel.font = .systemFont(ofSize: 12)
+        cLabel.font = .systemFont(ofSize: 16)
         
         return cLabel
     }()
@@ -59,40 +51,34 @@ class TableViewCell: UITableViewCell {
         contentView.addSubview(view)
         contentView.addSubview(image)
         contentView.addSubview(nameLabel)
-        contentView.addSubview(percentLabel)
         contentView.addSubview(priceLabel)
         contentView.addSubview(cryptoPriceLabel)
         
         view.translatesAutoresizingMaskIntoConstraints = false
         image.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        percentLabel.translatesAutoresizingMaskIntoConstraints = false
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
         cryptoPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            view.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
-            view.widthAnchor.constraint(equalToConstant: 70),
-            view.heightAnchor.constraint(equalToConstant: 50),
+            view.centerYAnchor.constraint(equalTo: centerYAnchor),
+            view.widthAnchor.constraint(equalToConstant: 40),
+            view.heightAnchor.constraint(equalToConstant: 40),
             
             image.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             image.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            image.heightAnchor.constraint(equalToConstant: 28),
-            image.widthAnchor.constraint(equalToConstant: 28),
+            image.heightAnchor.constraint(equalToConstant: 23),
+            image.widthAnchor.constraint(equalToConstant: 23),
             
             nameLabel.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
-            nameLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -16),
-            
-            percentLabel.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
-            percentLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 10),
+            nameLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             
             priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-            priceLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -12),
+            priceLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -8),
             
             cryptoPriceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-            cryptoPriceLabel.centerYAnchor.constraint(equalTo: percentLabel.centerYAnchor),
+            cryptoPriceLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: -10),
             cryptoPriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
 
