@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
 
     @objc func openCryptoPage() {
-        let cryptoVC = CryptoViewController()
+        let cryptoVC = MainTabBar()
         navigationController?.pushViewController(cryptoVC, animated: true)
     }
 }
