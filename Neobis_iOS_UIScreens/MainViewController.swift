@@ -8,6 +8,7 @@ class ViewController: UIViewController {
     let weatherButton = UIButton()
     let cryptoButton = UIButton()
     let financeButton = UIButton()
+    let travelButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,12 @@ class ViewController: UIViewController {
         financeButton.setTitleColor(.systemBlue, for: .normal)
         financeButton.addTarget(self, action: #selector(openFinancePage), for: .touchUpInside)
         
-        let stackView = UIStackView(arrangedSubviews: [weatherButton, cryptoButton, financeButton])
+        //button to open travel page
+        travelButton.setTitle("Travel", for: .normal)
+        travelButton.setTitleColor(.systemBlue, for: .normal)
+        travelButton.addTarget(self, action: #selector(openTravelPage), for: .touchUpInside)
+        
+        let stackView = UIStackView(arrangedSubviews: [weatherButton, cryptoButton, financeButton, travelButton])
         stackView.axis = .vertical
         stackView.spacing = 20
         stackView.alignment = .center
@@ -43,17 +49,22 @@ class ViewController: UIViewController {
     }
 
     @objc func openWeatherPage() {
-        let weatherVC = WeatherViewController()
-        navigationController?.pushViewController(weatherVC, animated: true)
+        let weatherViewController = WeatherViewController()
+        navigationController?.pushViewController(weatherViewController, animated: true)
     }
 
     @objc func openCryptoPage() {
-        let cryptoVC = CryptoMainTabBar()
-        navigationController?.pushViewController(cryptoVC, animated: true)
+        let cryptoViewController = CryptoMainTabBar()
+        navigationController?.pushViewController(cryptoViewController, animated: true)
     }
     
     @objc func openFinancePage() {
-        let financeVC = FinanceMainTabBar()
-        navigationController?.pushViewController(financeVC, animated: true)
+        let financeViewController = FinanceMainTabBar()
+        navigationController?.pushViewController(financeViewController, animated: true)
+    }
+    
+    @objc func openTravelPage() {
+        let travelViewController = TravelViewController()
+        navigationController?.pushViewController(travelViewController, animated: true)
     }
 }
