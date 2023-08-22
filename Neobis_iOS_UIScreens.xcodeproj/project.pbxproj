@@ -17,6 +17,7 @@
 		0471CEC92A87BF1000CD1EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0471CEC72A87BF1000CD1EEA /* LaunchScreen.storyboard */; };
 		0471CED22A87BF8B00CD1EEA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CED12A87BF8B00CD1EEA /* WeatherViewController.swift */; };
 		0471CED72A87C83400CD1EEA /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CED62A87C83400CD1EEA /* CryptoViewController.swift */; };
+		04D182372A956B3E00DCA52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D182362A956B3E00DCA52D /* Main.storyboard */; };
 		04E6F9DE2A90F5D2003440BF /* WeekWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9DD2A90F5D2003440BF /* WeekWeatherViewController.swift */; };
 		04E6F9E02A9103CB003440BF /* CryptoMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9DF2A9103CB003440BF /* CryptoMainTabBar.swift */; };
 		04E6F9E22A910473003440BF /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F9E12A910473003440BF /* CryptoTableViewCell.swift */; };
@@ -39,6 +40,7 @@
 		0471CECA2A87BF1000CD1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0471CED12A87BF8B00CD1EEA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0471CED62A87C83400CD1EEA /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		04D182362A956B3E00DCA52D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04E6F9DD2A90F5D2003440BF /* WeekWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekWeatherViewController.swift; sourceTree = "<group>"; };
 		04E6F9DF2A9103CB003440BF /* CryptoMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMainTabBar.swift; sourceTree = "<group>"; };
 		04E6F9E12A910473003440BF /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				0471CEBE2A87BF0F00CD1EEA /* SceneDelegate.swift */,
 				0471CEC02A87BF0F00CD1EEA /* MainViewController.swift */,
 				0471CEC52A87BF1000CD1EEA /* Assets.xcassets */,
+				04D182362A956B3E00DCA52D /* Main.storyboard */,
 				0471CEC72A87BF1000CD1EEA /* LaunchScreen.storyboard */,
 				0471CECA2A87BF1000CD1EEA /* Info.plist */,
 			);
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D182372A956B3E00DCA52D /* Main.storyboard in Resources */,
 				0471CEC92A87BF1000CD1EEA /* LaunchScreen.storyboard in Resources */,
 				0471CEC62A87BF1000CD1EEA /* Assets.xcassets in Resources */,
 			);
