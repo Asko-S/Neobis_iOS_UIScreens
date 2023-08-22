@@ -1,4 +1,4 @@
-//  MainTabBar.swift
+//  CryptoMainTabBar.swift
 //  Neobis_iOS_UIScreens
 //  Created by Askar Soronbekov 
 
@@ -18,10 +18,7 @@ class CryptoMainTabBar: UITabBarController {
     func setupTabBar() {
         
         let vc = CryptoViewController()
-        
         vc.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "main")?.withAlignmentRectInsets(.init(top: 10, left: 0, bottom: 0, right: 0)), tag: 0)
-        
-        
         
         let vc1 = createViewController(vc: UIViewController(), itemName: "", itemImage: "Main2")
         vc1.view.backgroundColor = .white

@@ -68,7 +68,7 @@ class TravelViewController : UIViewController {
     let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = true
-
+        
         return scrollView
     }()
     

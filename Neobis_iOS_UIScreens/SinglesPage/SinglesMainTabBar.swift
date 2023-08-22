@@ -1,9 +1,6 @@
 //  SinglesMainTabBar.swift
 //  Neobis_iOS_UIScreens
 //  Created by Askar Soronbekov
-//  SinglesMainTabBar.swift
-//  Neobis_iOS_UIScreens
-//  Created by Askar Soronbekov
 
 import Foundation
 import UIKit

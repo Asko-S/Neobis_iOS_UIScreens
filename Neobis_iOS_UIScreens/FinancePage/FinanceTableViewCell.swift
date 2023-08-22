@@ -44,7 +44,7 @@ class FinanceTableViewCell: UITableViewCell {
         return cLabel
     }()
     
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -81,9 +81,7 @@ class FinanceTableViewCell: UITableViewCell {
             cryptoPriceLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: -10),
             cryptoPriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
-
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

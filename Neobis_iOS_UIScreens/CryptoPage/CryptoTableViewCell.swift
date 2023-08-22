@@ -52,7 +52,7 @@ class CryptoTableViewCell: UITableViewCell {
         return cLabel
     }()
     
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -95,9 +95,7 @@ class CryptoTableViewCell: UITableViewCell {
             cryptoPriceLabel.centerYAnchor.constraint(equalTo: percentLabel.centerYAnchor),
             cryptoPriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
-
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

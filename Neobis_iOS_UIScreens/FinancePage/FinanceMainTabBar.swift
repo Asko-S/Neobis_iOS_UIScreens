@@ -1,6 +1,3 @@
-//  FinanceMainTabBar.swift
-//  Neobis_iOS_UIScreens
-//  Created by Askar Soronbekov
 // FinanceMainTabBar.swift
 // Neobis_iOS_UIScreens
 // Created by Askar Soronbekov

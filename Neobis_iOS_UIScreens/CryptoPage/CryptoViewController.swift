@@ -34,12 +34,6 @@ class CryptoViewController : UITabBarController {
         return tableView
     }()
     
-    //    let tabBar: UITabBar = {
-    //        let tabBar = UITabBar()
-    //        tabBar.backgroundColor = UIColor.white
-    //        return tabBar
-    //    }()
-    
     let bitcoinImage : UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "circle")
