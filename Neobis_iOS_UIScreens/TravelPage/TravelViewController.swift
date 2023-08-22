@@ -68,8 +68,7 @@ class TravelViewController : UIViewController {
     let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = true
-        
-        
+
         return scrollView
     }()
     
@@ -78,7 +77,6 @@ class TravelViewController : UIViewController {
         
         view.backgroundColor = .white
         searchBar.sizeToFit()
-        
         addToView()
         addConstraints()
     }
@@ -116,8 +114,6 @@ class TravelViewController : UIViewController {
             
             searchBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             searchBar.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 5),
-//            searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-//            searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             
             scrollView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 20),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

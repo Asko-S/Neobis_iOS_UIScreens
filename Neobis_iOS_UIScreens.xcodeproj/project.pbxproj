@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		044DB62A2A9554B600AA6869 /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DB6292A9554B600AA6869 /* TravelViewController.swift */; };
+		044DB62C2A955E3600AA6869 /* SinglesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DB62B2A955E3600AA6869 /* SinglesTableViewCell.swift */; };
+		044DB62E2A955E9D00AA6869 /* SinglesMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DB62D2A955E9D00AA6869 /* SinglesMainTabBar.swift */; };
 		0471CEBD2A87BF0F00CD1EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CEBC2A87BF0F00CD1EEA /* AppDelegate.swift */; };
 		0471CEBF2A87BF0F00CD1EEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CEBE2A87BF0F00CD1EEA /* SceneDelegate.swift */; };
 		0471CEC12A87BF0F00CD1EEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471CEC02A87BF0F00CD1EEA /* MainViewController.swift */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		044DB6292A9554B600AA6869 /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		044DB62B2A955E3600AA6869 /* SinglesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesTableViewCell.swift; sourceTree = "<group>"; };
+		044DB62D2A955E9D00AA6869 /* SinglesMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglesMainTabBar.swift; sourceTree = "<group>"; };
 		0471CEB92A87BF0F00CD1EEA /* Neobis_iOS_UIScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_UIScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0471CEBC2A87BF0F00CD1EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0471CEBE2A87BF0F00CD1EEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				04E6F9EB2A912043003440BF /* SinglesViewController.swift */,
+				044DB62B2A955E3600AA6869 /* SinglesTableViewCell.swift */,
+				044DB62D2A955E9D00AA6869 /* SinglesMainTabBar.swift */,
 			);
 			path = SinglesPage;
 			sourceTree = "<group>";
@@ -219,6 +225,8 @@
 				04E6F9E92A910B68003440BF /* FinanceTableViewCell.swift in Sources */,
 				04E6F9E52A910B0E003440BF /* FinanceMainTabBar.swift in Sources */,
 				0471CEBF2A87BF0F00CD1EEA /* SceneDelegate.swift in Sources */,
+				044DB62E2A955E9D00AA6869 /* SinglesMainTabBar.swift in Sources */,
+				044DB62C2A955E3600AA6869 /* SinglesTableViewCell.swift in Sources */,
 				0471CED72A87C83400CD1EEA /* CryptoViewController.swift in Sources */,
 				04E6F9E72A910B4F003440BF /* FinanceViewController.swift in Sources */,
 			);
