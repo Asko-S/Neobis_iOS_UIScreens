@@ -5,6 +5,7 @@
 import Foundation
 import UIKit
 
+
 class TravelViewController : UIViewController {
     
     let titleLabel : UILabel = {
